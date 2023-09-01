@@ -1,0 +1,17 @@
+sentence = input("Enter a sentence: ")
+length_counter = 0
+word_counter = 0
+vowel_counter = 0
+
+for char in sentence:
+    length_counter += 1
+    if char in "aeiouAEIOU":
+        vowel_counter += 1
+    if char == " ":
+        word_counter += 1
+
+word_counter += 1  ## Increment word_counter for the last word
+
+print("Length of the sentence:", length_counter)
+print("Number of words in the sentence:", word_counter)
+print("Number of vowels in the sentence:", vowel_counter
